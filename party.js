@@ -27,7 +27,7 @@ function drawStuff() {
         var c = Math.cos(funkadelic);
         for (var y = 0; y < height; y += side) {
             for (var x = 0; x < width; x += side) {
-                context.fillStyle = d3.lab(75, hue(y + s * x), hue(x + c * y));
+                context.fillStyle = d3.lab(75, hue(y + s * x), hue(x + c * y)).toString();
                 context.fillRect(x, y, side, side);
             }
         }
